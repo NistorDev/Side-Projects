@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue",sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background: palegreen; 
+    background-size : cover;
+    background-position: center;
+    position: absolute;
+}
+
+
+.titlu{
+    width: 300px;
+    height: 60px;
+    background: palegreen; 
+    border: 10px;
+    border-color: palegreen;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    
+}
+
+.titlu h1{
+    padding-left: 4px;
+    font-size: 30px;
+    border: 1px;
+
+}
+
+.camr{
+    width: 300px;
+    height: 285px;
+    border: 3px ;
+    border-color: palegreen;
+    border-radius: 3px;
+    /*padding: 100px 70px 120px 50px;*/
+    margin: 5px;
+    /* height: 100%; */
+}
+.camr h1{
+    text-align: left;
+    font-size: 30px;
+    border: 1px;
+}
+
+.camr hr{
+    width: 100px;
+    height: 1px;
+    border: 0px;
+    /* border-top: 1px solid black; */
+    margin-left: 10px;
+    margin-top: 7px;
+}
+
+#single{
+    background-size: cover;
+    background-image: url(../mainFile/imagini/single1.jpg);
+    /* position: absolute; */
+}
+
+#double{
+    background-size: cover;
+    background-image: url(../mainFile/imagini/double.jpg);
+    /* position: absolute; */
+}
+
+#apartament{
+    background-size: cover;
+    background-image: url(../mainFile/imagini/apartament.jpg);
+    /* position: absolute; */
+}
+
+.evidenta{
+    width: 60%;
+    height: 88.6%;
+    margin-top: 5px;
+    background: palegreen;
+    position: absolute;
+}
+
+
+.camcon, .evidenta {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#infocli{
+    width: 100%;
+    height: 100%;
+    background: palegreen;
+    /* border: 3px solid black; */
+}
+
+.txt {
+    width: 45%;
+    height: 30px;
+    margin: 3px;
+    /* display: flex; */
+}
+
+.sele{
+    width: 45%;
+    height: 30px;
+    margin: 3px;
+    /* display: flex; */
+}
+
+.txtb{
+    padding-top: 12px;
+    margin: 12px;
+}
+
+#dte{
+    width: 100%;
+    height: 30px;
+    display: flex;
+}
+
+#infocli h3{
+    background: palegreen;
+}
+
+
+
+.dsos, .dplec{
+    padding-left: 12px;
+    width: 45%;
+    display: inline-block;
+}
+
+#ev{
+    margin-left: 20px;
+}
+
+.rezervare{
+    width: 100%;
+    height: 77%;
+    background: palegreen;
+    border: 3px solid blue;
+}
+
+/* .tabel{
+    background: green !important;
+} */
+
+.tabel table, th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+    background: whitesmoke ;
+
+}
+
+
+.tabel table{
+    width: 100%;
+
+}
+
+.tabel td{
+    height: 20px;
+}
+
+#btns{
+    width: 100px;
+    height: 25px;
+    display: flex;
+    font-size: 100%;
+    position: absolute;
+    /* margin-top: 84%; */
+}

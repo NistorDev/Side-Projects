@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Anime Streaming</title>
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #1E1E1E; /* Dark background color */
+        }
+        
+        .rain {
+          position: absolute;
+          width: 1px;
+          height: 50px;
+          background-color: #87CEEB; /* Raindrop color */
+          animation: raindropFall 1s linear infinite;
+        }
+        
+        @keyframes raindropFall {
+          0% {
+            transform: translateY(-50px) rotate(45deg);
+            opacity: 0;
+          }
+          100% {
+            transform: translateY(100vh) rotate(45deg);
+            opacity: 1;
+          }
+        }
+      </style>
+</head>
+<body>
+    <audio autoplay> 
+        <source src="Black Butler_ Public School Arc - Opening  Fanatic Parade - The Parade of Battlers.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        // Function to generate raindrops
+        function generateRaindrop() {
+          const raindrop = document.createElement("div");
+          raindrop.classList.add("rain");
+          raindrop.style.left = `${Math.random() * 100}vw`; // Random horizontal position
+          document.body.appendChild(raindrop);
+          setTimeout(() => {
+            raindrop.remove(); // Remove raindrop after it falls off the screen
+          }, 2000); // Adjust duration if needed
+        }
+      
+        // Generate raindrops at intervals
+        setInterval(generateRaindrop, 100); // Adjust interval for density of rain
+      </script>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Acasa</a></li>
+                <li><a href="despre-noi.html">Despre noi</a></li>
+                <li><a href="#" id="loginBtn">Login</a></li>
+                <li><a href="indexCloud.html" id="indexCloud.html">Animatie</a></li>
+                <li><a href="indexDrow.html" id="indexCloud.html">Deseneaza</a></li>
+                <li><a href="indexHarta.html" id="indexCloud.html">Imagine</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="anime" id="anime1">
+            <h2>One Pice</h2>
+            <p id = 'p1'>Luffy obține abilitatea de a-și întinde corpul ca o cauciucă și își formează o echipă variată de prieteni, cunoscuți sub numele de "Echipajul Pălărie de Paie".</p>
+        </div>
+        <div class="anime" id="anime2">
+            <h2>Naruto</h2>
+            <p >"Naruto" este o populară serie de manga și anime creată de Masashi Kishimoto. Povestea se concentrează pe Naruto Uzumaki, un tânăr ninja hiperactiv din satul Konoha, care își propune să devină Hokage, liderul său, și să câștige recunoașterea celor din jur.</p>
+        </div>
+        <div class="anime" id="anime3">
+            <h2 id="k">Kuroshitsuji</h2>
+            <p id = 'p'>
+                "Kuroshitsuji" este o serie japoneză de manga și anime, cunoscută și sub numele de "Black Butler", creată de Yana Toboso. Povestea se învârte în jurul unui tânăr aristocrat englez pe nume Ciel Phantomhive și devotatului său servitor demon, Sebastian Michaelis.</p>
+        </div>
+        <div class="anime" id="anime4">
+            <h2 id= 'kp'>Jujutsu Kaisen</h2>
+            <p id = 'p'>"Kaisen" este o serie de manga și anime japoneză creată de Gege Akutami. Povestea urmărește aventurile lui Yuji Itadori, un elev de liceu cu abilități fizice deosebite, care se implică într-o lume înspăimântătoare a blestemelor și a magiei negre după ce deschide accidental un obiect blestemat.</p>
+        </div>
+        <div class="anime" id="anime5">
+            <h2>Kakegurui</h2>
+            <p id = 'p'>"Kakegurui" este o serie japoneză de manga și anime, creată de Homura Kawamoto și ilustrată de Tōru Naomura. Povestea are loc la Academia Privată Hyakkaou, o instituție elitistă unde elevii sunt clasificați în funcție de abilitățile lor la jocurile de noroc. În această academie, jocurile de noroc nu sunt doar o formă de divertisment, ci și o modalitate de a stabili ierarhiile sociale și de a exercita puterea.</p>
+        </div>
+        <!-- Repetați pentru celelalte anime-uri -->
+        <div>
+            <img class="img11" src="anime-pictures-wlltm0f7dbo5cch8.webp">
+            <img class="img11" src="Killua.jpeg">
+        </div>
+        
+
+        <video width="320" height="280" controls>
+            <source src="videoplayback.mp4" type="video/mp4">
+          </video>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; Nistor Rares Anul III 2024 Anime Streaming</p>
+    </footer>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Parola:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="button" onclick="login()">Login</button>
+                <button type="button" onclick="closeModal()">Renunta</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

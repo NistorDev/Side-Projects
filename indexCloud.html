@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rain Effect</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1E1E1E; /* Dark background color */
+  }
+  
+  .rain {
+    position: absolute;
+    width: 1px;
+    height: 50px;
+    background-color: #87CEEB; /* Raindrop color */
+    animation: raindropFall 1s linear infinite;
+  }
+  
+  @keyframes raindropFall {
+    0% {
+      transform: translateY(-50px) rotate(45deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(100vh) rotate(45deg);
+      opacity: 1;
+    }
+  }
+</style>
+</head>
+<body>
+<!-- Raindrops will be dynamically generated here -->
+<script>
+  // Function to generate raindrops
+  function generateRaindrop() {
+    const raindrop = document.createElement("div");
+    raindrop.classList.add("rain");
+    raindrop.style.left = `${Math.random() * 100}vw`; // Random horizontal position
+    document.body.appendChild(raindrop);
+    setTimeout(() => {
+      raindrop.remove(); // Remove raindrop after it falls off the screen
+    }, 2000); // Adjust duration if needed
+  }
+
+  // Generate raindrops at intervals
+  setInterval(generateRaindrop, 100); // Adjust interval for density of rain
+</script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesMain.css">
+    <title>Noblesse</title>
+    <script type="module" src="/mainFile/conn.js"></script> 
+
+    <!-- <script  src="/mainFile/main.js"></script>  -->
+</head>
+<body>
+
+    <div class="container">
+        <div class="titlu">
+            <h1>NOBLESSE</h1>
+            <p><i>"Reteta ta pentru relaxare perfecta!"</i></p>
+        </div>
+        <div class="camcon">
+            <div class="camr" id="single">
+                <h1 calss="cam">Camere single</h1>
+                <hr>
+            </div>
+
+            <div class="camr" id="double">
+                <h1 calss="cam">Camere double</h1>
+                <hr>
+            </div>
+
+            <div class="camr" id="apartament">
+                <h1 calss="cam">Apartamente</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="evidenta">
+            <h1 id="ev">Evidenta rezervari</h1>
+            <div class="rezervare">
+                <h1>Adauga rezervare noua</h1>
+                <form class="rezer" id="infocli">
+                    <!-- <p>test</p> -->
+                    <div class="txtb">
+                    <input class="txt" onfocus="this.value=''" id="txt1" type="text" placeholder="Nume client">
+                    <input class="txt" onfocus="this.value=''" id="txt2" type="text" placeholder="Prenume client"> <br>
+                    <!-- <input class="txt" id="txtr" type="text" name="ang" > -->
+                    <select id="selectr" onfocus="this.value=''" class="sele"  name="optionlist">
+                        <option>Receptioner</option>
+                        <option>Receptioner1</option>
+                        <option>Receptioner2</option>
+                        <option>Receptioner3</option>
+                    </select>
+
+                    <select id="selectc" onfocus="this.value=''" class="sele"  name="optionlist">
+                        <option>Tip camera</option>
+                        <option>Single</option>
+                        <option>Double</option>
+                        <option>Apartament</option>
+                    </select>
+                    <!-- <input class="txt" id="txtc" type="text" placeholder="Tipul camerei"> <br> -->
+                    <br>   
+                    </div>
+  
+                    <div class="dsos">
+                    <h3 class="lbld" id="lbld1">Data sosire</h3>  
+                    <input id="dte" type="date" placeholder="Data sosire">
+                    </div>
+
+                    <div class="dplec">
+                    <h3 class="lbld" id="lbld2">Data plecare</h3> 
+                    <input id="dte" type="date" placeholder="Data plecare">
+                    </div>
+                    <!-- <button type="submit"  id="btns">Salveaza</button>  -->
+                </form>
+                <!-- <button type="submit"  id="btns">Salveaza</button> -->
+            </div>
+            <form id="rezv">
+                <div class="tabel">
+                    <table>
+                        <tr>
+                            <th>Nume</th>
+                            <th>Prenume</th>
+                            <th>Tip camera</th>
+                            <th>Perioada</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <button type="submit"  id="btns">Salveaza</button> 
+
+                </div>
+            </form>
+        </div>
+       
+    </div>
+    <script type="module" src="/mainFile/main.js"></script> 
+</body>
+
+
+</html>

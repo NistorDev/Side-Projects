@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url(/animeWeb/image-42-900x506.webp) ;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+
+header {
+    background-color: #333;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+
+.anime {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+    /* text-align: center; */
+
+    overflow: hidden;
+    /* transition: opacity 0.5s; */
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+#k{
+    color: white ;
+    
+}
+
+#anime1 {
+    background-image: url(/animeWeb/luffy-4961-x-3508-picture-id0fvp279n0hh572.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#anime2 {
+    background-image: url(/animeWeb/Naruto-Wallpaper-images.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#anime3 {
+    background-image: url(/animeWeb/4809dc7ead299c5c48d82d7796baba913bfb0219.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#anime4 {
+    background-image: url(/animeWeb/anime-pictures-wlltm0f7dbo5cch8.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#anime5 {
+    background-image: url(/animeWeb/kakegurui-yumeko-jabami-and-gambling-pilbd1shn93vpo4j.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.anime:hover {
+    /* background-color: #e0e0e0; */
+
+    opacity: 0.7;
+
+}
+
+.anime-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    /* color: white; */
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+} */
+
+.anime:hover .anime-info {
+    opacity: 1;
+}
+
+.anime .anime-info p {
+    display: none;
+}
+
+.anime:hover .anime-info p {
+    display: block;
+    color: #fff;
+}
+
+#p1 {
+    color:black ;
+
+}
+
+#p{
+    color: #f0f0f0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    width: 100%;
+    height: 100%;
+    /* width: 200px;
+    height: 200px; */
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    /* width: 30%; */
+    width: 310px;
+    background-image: url(/animeWeb/jujutsu-kaisen-season-2.webp);
+
+}
+
+.close {
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 10px;
+}
+
+form input {
+    margin-bottom: 15px;
+}
+
+form button {
+    padding: 10px;
+    cursor: pointer;
+}
+.img11{
+    width: 300px;
+    height:300px;
+}
+
